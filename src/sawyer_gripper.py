@@ -1,3 +1,4 @@
+#!/usr/bin/python
 import intera_interface
 import rospy
 import std_msgs
