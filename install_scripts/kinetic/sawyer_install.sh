@@ -26,7 +26,7 @@ sed -i "s|\#your_hostname=\"my_computer.local\"|your_hostname=\"localhost\"|g" .
 sed -i "s|ros_version=\"indigo\"|ros_version=\"kinetic\"|g" ./intera.sh
 
 # Setup Sawyer simulator (https://sdk.rethinkrobotics.com/intera/Gazebo_Tutorial)
-sudo apt -y install gazebo7 ros-kinetic-qt-build ros-kinetic-gazebo-ros-control ros-kinetic-gazebo-ros-pkgs ros-kinetic-ros-control ros-kinetic-control-toolbox ros-kinetic-realtime-tools ros-kinetic-ros-controllers ros-kinetic-xacro python-wstool ros-kinetic-tf-conversions ros-kinetic-kdl-parser ros-kinetic-sns-ik-lib
+sudo apt -y install gazebo7 ros-kinetic-qt-build ros-kinetic-gazebo-ros-control ros-kinetic-gazebo-ros-pkgs ros-kinetic-ros-control ros-kinetic-control-toolbox ros-kinetic-realtime-tools ros-kinetic-ros-controllers ros-kinetic-xacro python-wstool ros-kinetic-tf-conversions ros-kinetic-kdl-parser ros-kinetic-sns-ik-lib ros-kinetic-moveit-msgs
 cd ~/catkin_ws/src
 git clone https://github.com/RethinkRobotics/sawyer_simulator.git
 wstool merge sawyer_simulator/sawyer_simulator.rosinstall
@@ -40,4 +40,7 @@ wstool update
 
 # Finally build the workspace
 cd ~/catkin_ws
-sudo catkin build
+catkin build
+
+# Source the workspace with each new terminal
+echo "source ~/catkin_ws/devel/setup.bash" >> ~/.bashrc

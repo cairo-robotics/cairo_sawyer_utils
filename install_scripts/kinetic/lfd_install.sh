@@ -15,7 +15,7 @@ cd ~/catkin_ws/src/cairo-lfd && pip install -r requirements.txt
 
 # Finally build the workspace
 cd ~/catkin_ws
-sudo catkin build
+catkin build
 
 # Add Intera setup script alias
 echo 'alias sim="cd ~/catkin_ws && clear && ./intera.sh sim"' >> ~/.bashrc
