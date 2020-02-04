@@ -7,8 +7,11 @@ then
     wstool init src
 fi
 
-# Setup Intera SDK (https://sdk.rethinkrobotics.com/intera/Workstation_Setup)
+# Install catkin tools
 sudo apt -y update
+sudo apt -y install python-catkin-tools
+
+# Setup Intera SDK (https://sdk.rethinkrobotics.com/intera/Workstation_Setup)
 sudo apt -y install git-core python-argparse python-vcstools python-rosdep ros-kinetic-control-msgs ros-kinetic-joystick-drivers ros-kinetic-xacro ros-kinetic-tf2-ros ros-kinetic-rviz ros-kinetic-cv-bridge ros-kinetic-actionlib ros-kinetic-actionlib-msgs ros-kinetic-dynamic-reconfigure ros-kinetic-trajectory-msgs ros-kinetic-rospy-message-converter
 cd ~/catkin_ws/src
 git clone https://github.com/RethinkRobotics/sawyer_robot.git
