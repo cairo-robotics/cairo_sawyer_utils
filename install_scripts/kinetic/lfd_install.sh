@@ -11,7 +11,7 @@ cd ~/catkin_ws/src && git clone https://github.com/cairo-robotics/cairo-robot-in
 cd ~/catkin_ws/src && git clone https://github.com/cairo-robotics/collision_objects.git
 
 # Install LfD Python requirements
-cd ~/catkin_ws/src/cairo-lfd && pip install -r requirements.txt
+cd ~/catkin_ws/src/cairo-lfd && pip install --user -r requirements.txt
 
 # Finally build the workspace
 cd ~/catkin_ws
