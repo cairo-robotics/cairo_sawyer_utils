@@ -4,6 +4,7 @@ then
     mkdir -p ~/catkin_ws/src
     cd ~/catkin_ws/
     catkin build
+    wstool init src
 fi
 
 # Setup Intera SDK (https://sdk.rethinkrobotics.com/intera/Workstation_Setup)
