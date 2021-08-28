@@ -3,7 +3,7 @@
 #########################
 
 while true; do
-    read -p "Is you current working directory your ROS workspace (e.g. sawyer_ws or ros_ws" yn
+    read -p "Is you current working directory your ROS workspace (e.g. sawyer_ws or ros_ws)? (y/n) " yn
     case $yn in
         [Yy]* ) break;;
         [Nn]* ) exit;;
