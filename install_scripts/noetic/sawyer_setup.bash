@@ -12,7 +12,7 @@ while true; do
 
             sudo apt-get update;
 
-            sudo apt-get --assume-yes install ros-noetic-desktop-full git python3-vcstools python3-rosdep  python3-rosinstall python3-rosinstall-generator build-essential;
+            sudo apt-get --assume-yes install ros-noetic-desktop-full ros-noetic-rospy-message-converter git python3-vcstools python3-rosdep  python3-rosinstall python3-rosinstall-generator build-essential;
             
             break;;
         [Nn]* ) 
